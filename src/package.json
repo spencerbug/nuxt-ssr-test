@@ -1,0 +1,24 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "My phenomenal Nuxt.js project",
+  "author": "Spencer Neilan",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build && yarn copy",
+    "copy": "cp -R ../functions/nuxt/dist/ ../public/assets",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "serve": "cd .. && firebase serve"
+  },
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "nodemon": "^1.18.9"
+  }
+}
